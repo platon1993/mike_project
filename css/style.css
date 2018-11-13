@@ -218,6 +218,12 @@
 }
 
 @media only screen and (min-width: 925px) and (max-width: 1170px) {
+    .nav-header {
+        margin-top: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 925px) and (max-width: 1170px) {
     .content-main {
         padding-left: 150px;
         padding-right: 150px;
@@ -245,6 +251,15 @@
     .content-main {
         padding-left: 50px;
         padding-right: 50px;
+    }
+    .form-best-mode-alternative {
+        width: 90%;
+        margin-right: 0px;
+        margin-bottom: 10px
+    }
+
+    .button-best-mode-alternative {
+        width: 90%;
     }
     
 }
@@ -284,6 +299,17 @@
     .form-best-mode {
         width: 90%;
     }
+
+    .form-best-mode-alternative {
+        width: 90%;
+        margin-right:0px;
+        margin-bottom: 10px
+    }
+
+    .button-best-mode-alternative {
+        width: 90%;
+
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -320,6 +346,7 @@
     .form-best-mode-alternative {
         width: 90%;
         margin-right: 0px;
+        margin-bottom: 10px;
     }
     .button-best-mode-alternative{
         width: 90%;
