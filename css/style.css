@@ -217,9 +217,9 @@
     padding-right: 229px;
 }
 
-@media only screen and (min-width: 925px) and (max-width: 1170px) {
-    .nav-header {
-        margin-top: 100px !important;
+@media only screen and (min-width: 1170px) and (max-width: 1350px) {
+    .form-best-mode-alternative {
+        width: 55%;
     }
 }
 
@@ -227,6 +227,16 @@
     .content-main {
         padding-left: 150px;
         padding-right: 150px;
+    }
+
+    .form-best-mode-alternative {
+        width: 90%;
+        margin-right: 0px;
+        margin-bottom: 10px
+    }
+
+    .button-best-mode-alternative{
+        width: 90%;
     }
 }
 
