@@ -1,22 +1,22 @@
 @font-face {
-    src: url(/fonts/futura/futura.ttf);
+    src: url(/wp-content/themes/Mike_Rosenmann/fonts/futura/futura.ttf);
     font-family: Futura;
 }
 
 @font-face {
-    src: url(/fonts/futura/futuraLT.ttf);
+    src: url(/wp-content/themes/Mike_Rosenmann/fonts/futura/futuraLT.ttf);
     font-family: Futura;
     font-weight: 500;
 }
 
 @font-face {
-    src: url(/fonts/futura/futuraLT-Bold.ttf);
+    src: url(/wp-content/themes/Mike_Rosenmann/fonts/futura/futuraLT-Bold.ttf);
     font-family: Futura;
     font-weight: bold;
 }
 
 @font-face {
-    src: url(/fonts/futura/futuraLT-Heavy.ttf);
+    src: url(/wp-content/themes/Mike_Rosenmann/fonts/futura/futuraLT-Heavy.ttf);
     font-family: Futura;
     font-weight: 900;
 }
