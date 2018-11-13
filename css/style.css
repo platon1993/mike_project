@@ -271,6 +271,11 @@
     .button-best-mode-alternative {
         width: 90%;
     }
+
+    .about-mike-text-under-menu {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
     
 }
 
@@ -320,6 +325,11 @@
         width: 90%;
 
     }
+
+    .about-mike-text-under-menu {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -361,6 +371,11 @@
     .button-best-mode-alternative{
         width: 90%;
     }
+    .about-mike-text-under-menu {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
 }
 img {
     width: 100%;
@@ -410,7 +425,6 @@ ul.navi-footer li a {
 ul.navi-footer li {
     display: inline;
     margin-right: 5px;
-    margin-bottom: 64px !important;
 }
 
 ul.navi-footer {
