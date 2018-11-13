@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.738 21.738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6e6e6e;
+        opacity: .49;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_37" data-name="Group 37" transform="translate(0 0)">
+    <g id="Group_34" data-name="Group 34" transform="translate(0 0)">
+      <ellipse id="Oval-1-Copy-6" class="cls-1" cx="10.869" cy="10.869" rx="10.869" ry="10.869" transform="translate(0 0)"/>
+      <path id="XMLID_17_" class="cls-2" d="M9.681,0H4.108A4.112,4.112,0,0,0,0,4.108V9.681a4.112,4.112,0,0,0,4.108,4.108H9.681a4.112,4.112,0,0,0,4.108-4.108V4.108A4.112,4.112,0,0,0,9.681,0ZM12.4,9.681A2.721,2.721,0,0,1,9.681,12.4H4.108A2.721,2.721,0,0,1,1.387,9.681V4.108A2.721,2.721,0,0,1,4.108,1.387H9.681A2.721,2.721,0,0,1,12.4,4.108V9.681Z" transform="translate(4.037 3.748)"/>
+      <path id="XMLID_81_" class="cls-2" d="M136.566,133a3.566,3.566,0,1,0,3.566,3.566A3.57,3.57,0,0,0,136.566,133Zm0,5.745a2.179,2.179,0,1,1,2.179-2.179A2.179,2.179,0,0,1,136.566,138.745Z" transform="translate(-125.635 -125.924)"/>
+      <ellipse id="XMLID_83_" class="cls-2" cx="0.854" cy="0.854" rx="0.854" ry="0.854" transform="translate(13.65 6.248)"/>
+    </g>
+  </g>
+</svg>
