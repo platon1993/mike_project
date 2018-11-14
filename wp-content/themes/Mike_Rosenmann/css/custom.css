@@ -44,7 +44,9 @@
     margin-right: 32px !important;
     margin-left: 32px !important;
 }
-
+.menu-wrap{
+    padding-right: 45px;
+}
 .navbar,
 .navbar-brand,
 .navbar-nav > li > a {
