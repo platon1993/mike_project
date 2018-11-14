@@ -1,10 +1,5 @@
 <?php
-//Theme Options
-if(function_exists('acf_add_options_page')) {
 
-    acf_add_options_page();
-
-}
 
 function theme_name_scripts() {
     wp_enqueue_style( 'fonts.googl', 'https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
