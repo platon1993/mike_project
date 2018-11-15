@@ -51,7 +51,7 @@
 .navbar-brand,
 .navbar-nav > li > a {
     color: white !important;
-    font-weight: 1000;
+    font-weight: 900;
     font-family: 'Open Sans';
     text-shadow: none;
     background: transparent;
@@ -323,9 +323,17 @@ a {
         margin-bottom: 60px;
     }
 
+    .content-main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
+    .form-best-mode-alternative {
+        width: 90%;
+        margin-right: 0px;
+        margin-bottom: 10px
+    }
 }
-
 @media only screen and (max-width: 375px) {
     .main-under {
         margin-top: 20px;
@@ -405,7 +413,8 @@ p {
 }
 
 .footer-icons {
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .footer-text p {
@@ -445,12 +454,11 @@ ul.navi-footer {
     .mobile_menu {
         display: block !important;
     }
-}
 
-.laptop_menu {
-    display: none;
+    .laptop_menu {
+        display: none;
+    }
 }
-
 @media screen and (min-width: 813px) {
     .laptop_menu {
         display: block !important;
@@ -491,10 +499,9 @@ ul.navi-footer {
 
 .form-contact{
     margin-top: 70px;
-    font-family: ''Open Sans'', serif;
+    font-family: 'Open Sans', serif;
     font-size: 14px;
     font-style: italic;
-    box-shadow
 }
 
 .form-contact .form-control{
@@ -505,8 +512,76 @@ ul.navi-footer {
 }
 
 
-.form-contact-button{
+.form-contact-button {
     color: white !important;
-    background:#60337A !important;
+    background: #60337A !important;
     width: 93px;
+}
+
+.blog-header{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #000000;
+    opacity: 68%;
+    line-height: 2;
+    }
+
+.about-mike-text-under-menu-blog{
+    color: #E3B4FF !important;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+    padding: 0px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.navi-footer{
+    list-style: circle;
+}
+
+.navi-footer_new{
+margin-bottom: 64px;
+margin-top: 31px;
+padding: 0;
+}
+
+.navi-footer_new li{
+    display: inline;
+
+}
+.navi-footer_new li a {
+    color: #B1B1B1!important;
+    font-weight: 700;
+}
+.navi-footer_new li:before{
+    color: #B1B1B1;
+    content:"● ";
+}
+.navi-footer_new li:first-child:before{
+    content:" ";
+}
+.navi-footer_new li:first-child{
+    list-style: none;
+}
+
+.blog-navigation{
+    font-family: 'Open Sans', serif;
+    color: #707070;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.arrow-left{
+    width: 12px;
+    margin-top: 0px;
+    margin-right: 8px;
+}
+
+.arrow-right{
+    width: 12px;
+    margin-top: 0px;
+    margin-left: 8px;
+    transform: rotate(180deg);
 }

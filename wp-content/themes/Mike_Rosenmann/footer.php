@@ -12,13 +12,12 @@
         </div>
         <div class="row">
             <div class="text-center">
-                <ul class="navi-footer">
-                    <li><a href="#">Get In Touch</a></li>
-                    <li><img class="point" src="<?php echo get_template_directory_uri(); ?>/img/icons/point.svg"></li>
-                    <li><a href="#">About Mike</a></li>
-                    <li><img class="point" src="<?php echo get_template_directory_uri(); ?>/img/icons/point.svg"></li>
-                    <li><a href="#">Beast Mode</a></li>
-                </ul>
+
+
+                <?php wp_nav_menu(array("name" => "main",'container' => '',
+                    'items_wrap' => '<ul class="navi-footer_new ">%3$s</ul>'));?>
+
+
             </div>
         </div>
     </footer>

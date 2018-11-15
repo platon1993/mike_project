@@ -35,12 +35,14 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
-                                <?php wp_nav_menu(array("name" => "main",'container'       => '',
+                                <?php wp_nav_menu(array("name" => "main",'container' => '',
                                     'items_wrap' => '<ul class="nav navbar-nav navbar-right ">%3$s</ul>'));?>
 
                         </div>
                     </div>
-                    <button name="singlebutton" class="btn btn-primary center-block button-top">Latest blog: "How to be productive"</button>
+                    <?php   if($_SERVER['REQUEST_URI'] == "/") {?>
+                    <a href="<?php echo get_latest_link(); ?>"> <button name="singlebutton" class="btn btn-primary center-block button-top">Latest blog: "How to be productive"</button></a>
+                    <?php  } ?>
                 </div>
                 <div class="laptop_menu">
                     <div class="row">
@@ -48,10 +50,13 @@
                             <a class="navbar-brand" href="/"><?php echo get_option('logo_url') ?></a>
                         </div>
                         <div class="col-lg-4 col-md-3 center-button">
-
+                  <?php   if($_SERVER['REQUEST_URI'] == "/") {?>
                             <center>
-                                <a href="">  <button name="singlebutton" class="btn btn-primary center-block button-top">Latest blog: "How to be productive"</button> </a>
+                                <a href="<?php echo get_latest_link(); ?>">  <button name="singlebutton" class="btn btn-primary center-block button-top">Latest blog: "How to be productive"</button> </a>
                             </center>
+                  <?php  } ?>
+
+
                         </div>
                         <div class="col-lg-4 col-md-5 col-sm-6 menu-wrap">
 
