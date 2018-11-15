@@ -19,8 +19,7 @@ get_header();
 
             <div class="text-center">
                 <div class="row">
-                    <input  placeholder="Your e-mail address" type="text" class="col-md-8 form-best-mode-alternative">
-                    <button name="singlebutton" class="col-md-4 btn btn-primary center-block button-best-mode-alternative">Contact me about this program</button>
+                    <?php echo do_shortcode('[contact-form-7 id="106" title="Best Mode Alternative"]'); ?>
                 </div>
             </div>
         </div>
