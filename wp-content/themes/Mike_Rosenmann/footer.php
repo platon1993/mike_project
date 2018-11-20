@@ -14,10 +14,12 @@
             <div class="text-center">
 
 
-                <?php wp_nav_menu(array("name" => "main",'container' => '',
-                    'items_wrap' => '<ul class="navi-footer_new ">%3$s</ul>'));?>
-
-
+                <?php wp_nav_menu(array(
+                        "name" => "main",
+                    "before" => "<span class='footer_point'><img src=".get_template_directory_uri()."/img/icons/point.svg\" ></span>",
+                    'container' => '',
+                    'items_wrap' => '<ul class="navi-footer_new ">%3$s</ul>'
+                ));?>
             </div>
         </div>
     </footer>

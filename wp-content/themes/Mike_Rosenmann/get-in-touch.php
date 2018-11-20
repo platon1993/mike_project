@@ -11,7 +11,7 @@ get_header();
     <div class="content-main">
         <div class="row">
             <div class="">
-                <p class="text-center about-mike-text-under-menu">"No need to do this all on your own, let me help you get the best out of life!"</p>
+                <p class="text-center about-mike-text-under-menu-get-in-touch">"No need to do this all on your own, let me help you get the best out of life!"</p>
             </div>
             <?php echo get_post_field('post_content', $post->ID);?>
         </div>

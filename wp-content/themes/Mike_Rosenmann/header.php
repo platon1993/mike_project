@@ -38,6 +38,7 @@
                                 <?php wp_nav_menu(array("name" => "main",'container' => '',
                                     'items_wrap' => '<ul class="nav navbar-nav navbar-right ">%3$s</ul>'));?>
 
+
                         </div>
                     </div>
                     <?php   if($_SERVER['REQUEST_URI'] == "/") {?>
