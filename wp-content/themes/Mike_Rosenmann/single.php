@@ -25,8 +25,9 @@ the_post_navigation( array(
     <div style="clear: both"></div>
 </div>
             <div class="row">
+                <p class="text-center about-mike-text-under-menu-blog"><?php the_field('title_blog_post');?></p>
+                <p class="blog-header"><?php the_field('subtitle_blog_post');?></p>
 
-               
      
 
                 <?php echo get_post_field('post_content', $post->ID);?>

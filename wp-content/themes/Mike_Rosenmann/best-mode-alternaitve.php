@@ -19,6 +19,7 @@ get_header();
 
             <div class="text-center">
                 <div class="row">
+
                     <?php echo do_shortcode('[contact-form-7 id="106" title="Best Mode Alternative"]'); ?>
                 </div>
             </div>

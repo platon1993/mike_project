@@ -11,7 +11,7 @@ get_header();
     <div class="content-main">
         <div class="row">
             <div class="">
-                <p class="text-center about-mike-text-under-menu">"If you don't like the result, change the approach"</p>
+                <p class="text-center about-mike-text-under-menu"><?php the_field('title');?></p>
             </div>
 
 
