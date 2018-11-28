@@ -1,4 +1,14 @@
 @font-face {
+    src: url(/wp-content/themes/Mike_Rosenmann/fonts/playfair-display/PlayfairDisplay-BoldItalic.otf);
+    font-family: PlayfairDisplay-BoldItalic;
+}
+
+@font-face {
+    src: url(/wp-content/themes/Mike_Rosenmann/fonts/playfair-display/PlayfairDisplay-Regular.otf);
+    font-family: PlayfairDisplay-Regular;
+}
+
+@font-face {
     src: url(/wp-content/themes/Mike_Rosenmann/fonts/futura/futura.ttf);
     font-family: Futura;
 }
@@ -22,7 +32,7 @@
 }
 
 .header {
-    max-height: 653px;
+    max-height: 671px;
     background: #E3B4FF;
     border: none;
     border-radius: 0;
@@ -66,7 +76,7 @@
 }
 
 .navbar-brand {
-    font-family: 'Playfair Display', serif;
+    font-family: 'PlayfairDisplay-BoldItalic', serif;
     font-size: 26px;
     font-weight: 700;
     margin-top: 40px !important;
@@ -157,7 +167,7 @@ a {
 
 .about-mike-text-under-menu{
     color: #E3B4FF !important;
-    font-family: 'Playfair Display', serif;
+    font-family: 'PlayfairDisplay-BoldItalic', serif;
     font-size: 40px;
     font-weight: 900;
     font-style: italic;
@@ -173,7 +183,7 @@ a {
 
 .about-mike-text-under-menu-get-in-touch{
     color: #E3B4FF !important;
-    font-family: 'Playfair Display', serif;
+    font-family: 'PlayfairDisplay-BoldItalic', serif;
     font-size: 40px;
     font-weight: 900;
     font-style: italic;
@@ -220,22 +230,22 @@ a {
     margin-bottom: 103px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #BBBBBB;
-    opacity: 1; /* Firefox */
+::placeholder { / Chrome, Firefox, Opera, Safari 10.1+ /
+color: #BBBBBB;
+    opacity: 1; / Firefox /
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #BBBBBB;
+:-ms-input-placeholder { / Internet Explorer 10-11 /
+color: #BBBBBB;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: #BBBBBB;
+::-ms-input-placeholder { / Microsoft Edge /
+color: #BBBBBB;
 }
 
 .main-under {
     color: white !important;
-    font-family: 'Playfair Display', serif;
+    font-family: 'PlayfairDisplay-BoldItalic', serif;
     font-size: 30px;
     font-weight: 800;
     font-style: italic;
@@ -254,13 +264,13 @@ a {
 
 
 /*@media only screen and (min-width: 1170px) and (max-width: 1350px) {*/
-    /*.form-best-mode-alternative {*/
-        /*width: 55%;*/
-    /*}*/
+/*.form-best-mode-alternative {*/
+/*width: 55%;*/
+/*}*/
 /*}*/
 
 .blog-header{
-    font-family: 'Playfair Display', regular;
+    font-family: 'PlayfairDisplay-Regular', serif;
     font-size: 20px;
     color: #525252;
     opacity: 68%;
@@ -331,7 +341,23 @@ a {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-    
+
+    .pricing-best-mode{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pricing-best-mode-left{
+        width: 100% !important;
+        margin-bottom: 6px;
+        margin-right: 0px !important;
+    }
+
+    .pricing-best-mode-right{
+        width: 100% !important;
+    }
+
+
 }
 
 @media only screen and (min-width: 375px) and (max-width: 650px) {
@@ -404,6 +430,21 @@ a {
     .blog-header{
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .pricing-best-mode{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pricing-best-mode-left{
+        width: 100% !important;
+        margin-bottom: 6px;
+        margin-right: 0px !important;
+    }
+
+    .pricing-best-mode-right{
+        width: 100% !important;
     }
 }
 @media only screen and (max-width: 375px) {
@@ -479,11 +520,32 @@ a {
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .pricing-best-mode{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pricing-best-mode-left{
+        width: 100% !important;
+        margin-bottom: 6px;
+        margin-right: 0px !important;
+    }
+
+    .pricing-best-mode-right{
+        width: 100% !important;
+    }
 }
 
 img {
     width: 100%;
     margin-top: 20px;
+}
+
+.img-main{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .content-first {
@@ -502,6 +564,13 @@ img {
     margin-top: 52px;
 }
 
+.content-blog{
+    line-height: 2;
+    margin-top: 89px;
+}
+
+
+
 p {
     margin-top: 35px;
     line-height: 30px;
@@ -511,7 +580,7 @@ p {
 
 .footer {
     background-color: #F3F3F3;
-    margin-top: 88px;
+    margin-top: 58px;
 }
 
 .footer-icons {
@@ -543,11 +612,77 @@ ul.navi-footer {
     margin-top: 31px;
     padding: 0;
 }
+.mobile_menu_new_flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.menu_elements{
+    z-index: 1;
+    position: fixed;
+
+    width: 300px;
+    right: -300px;
+
+    height: 100%;
+    background: #d083ff;
+    list-style: none;
+    -webkit-transition: right .3s; / For Safari 3.1 to 6.0 /
+transition: right .3s;
+}
+.menu_elements ul{
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.menu_elements ul li{
+    line-height: 60px;
+    border-bottom: 1px solid white;
+
+    padding: 0 5px;
+    margin: 0px;
+
+}
+.menu_elements ul li:last-child{
+
+    border-bottom: none;
+
+
+}
+.menu_elements ul li a{
+    color:white;
+}
+.mobile_menu_active{
+    right: 0px!important;
+}
+.menu_button{
+    cursor: pointer;
+
+
+}
+.menu_button img{
+    margin: 0px;
+    max-width: 35px;
+}
+
+.logo_mobile a{
+    font-family: 'PlayfairDisplay-BoldItalic', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color:white;
+
+    padding: 0px;
+}
 
 .mobile_menu {
     display: none;
 }
-
+.mobile_menu_new {
+    display: none;
+}
 .mobile-menu-style {
     margin-top: 20px !important;
 }
@@ -555,6 +690,10 @@ ul.navi-footer {
 @media only screen and (max-width: 812px) {
     .mobile_menu {
         display: block !important;
+    }
+    .mobile_menu_new {
+        display: block !important;
+
     }
 
     .laptop_menu {
@@ -622,7 +761,7 @@ ul.navi-footer {
     color: #BBBBBB;
     margin-top: 11px;
 }
- .form-control-textarea {
+.form-control-textarea {
     height: 325px !important;
 }
 .form-contact-button {
@@ -636,7 +775,7 @@ ul.navi-footer {
 
 .about-mike-text-under-menu-blog{
     color: #E3B4FF !important;
-    font-family: 'Playfair Display', serif;
+    font-family: 'PlayfairDisplay-BoldItalic', serif;
     font-size: 40px;
     font-weight: 800;
     font-style: italic;
@@ -651,9 +790,9 @@ ul.navi-footer {
 }
 
 .navi-footer_new{
-margin-bottom: 64px;
-margin-top: 22px;
-padding: 0;
+    margin-bottom: 64px;
+    margin-top: 22px;
+    padding: 0;
 }
 
 .navi-footer_new li{
@@ -666,10 +805,10 @@ padding: 0;
     font-weight: 700;
 }
 /*.navi-footer_new li:before{*/
-    /*color: #B1B1B1;*/
-    /*content:"●";*/
-    /*margin-right: 8px;*/
-    /*margin-left: 4px;*/
+/*color: #B1B1B1;*/
+/*content:"в—Џ";*/
+/*margin-right: 8px;*/
+/*margin-left: 4px;*/
 /*}*/
 .navi-footer_new li:first-child:before{
     content:" ";
@@ -701,12 +840,253 @@ padding: 0;
 .arrow-left{
     width: 12px;
     margin-top: 0px;
+    margin-bottom: 2px;
     margin-right: 8px;
 }
 
 .arrow-right{
     width: 12px;
     margin-top: 0px;
+    margin-bottom: 2px;
     margin-left: 8px;
     transform: rotate(180deg);
 }
+.post-navigation h2{
+    display: none !important;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+/ adjust body when menu is open /
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+    padding-top: 70px;
+    right: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+
+
+
+/ put toggle bars on the left :: not using button /
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: right;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+/ icon bar prettyup - optional /
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: orange
+}
+.navbar-header {
+    position: relative
+}
+/ un fix the navbar when active so that all the menu items are accessible /
+.navbar.navbar-fixed-top.slide-active {
+    position: relative
+}
+/ screw writing importants and shit, just stick it in max width since these classes are not shared between sizes /
+@media (max-width:767px) {
+    #slide-nav .container {
+        margin: 0!important;
+        padding: 0!important;
+        height:100%;
+    }
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        width: 80%;
+        top: -1px;
+        z-index: 1000;
+    }
+    #slide-nav #slidemenu {
+        background: #f7f7f7;
+        right: -100%;
+        width: 80%;
+        min-width: 0;
+        position: absolute;
+        padding-left: 0;
+        z-index: 2;
+        top: -8px;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav {
+        min-width: 0;
+        width: 100%;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 80%;
+        white-space: normal;
+    }
+    #slide-nav {
+        border-top: 0
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #333
+    }
+    /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+    #navbar-height-col {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        bottom:0;
+        width: 80%;
+        right: -80%;
+        background: #f7f7f7;
+    }
+    #navbar-height-col.inverse {
+        background: #333;
+        z-index: 1;
+        border: 0;
+    }
+    #slide-nav .navbar-form {
+        width: 100%;
+        margin: 8px 0;
+        text-align: center;
+        overflow: hidden;
+        /*fast clearfixer*/
+    }
+    #slide-nav .navbar-form .form-control {
+        text-align: center
+    }
+    #slide-nav .navbar-form .btn {
+        width: 100%
+    }
+}
+@media (min-width:768px) {
+    #page-content {
+        left: 0!important
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed
+    }
+    .navbar-header {
+        left: 0!important
+    }
+}
+.navbar-nav > li > a:hover{
+    background: none;
+}
+.laptop_menu{
+    margin-bottom: 20px;
+}
+
+button, input{
+    outline: none !important
+}
+
+a{
+    background: none !important;
+}
+
+.hr_line{
+    background: #F2F2F2 !important;
+    margin-top: 60px; !important;
+}
+
+.pricing-best-mode{
+    display: flex;
+}
+
+
+.pricing-best-mode-left{
+    color: #707070;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    margin-right: 6px;
+    padding: 35px 25px 35px 25px;
+    background: #F1F1F1;
+    width: 50%;
+}
+
+.pricing-best-mode-right{
+    display: flex;
+    flex-direction: column;
+    color: #707070;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    padding: 35px 25px 35px 25px;
+    background: #F1F1F1;
+    width: 50%;
+}
+
+.pricing-best-mode-right ul{
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.pricing-count{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.hr_pricing{
+    height: 2px;
+    flex-grow: 1;
+    background: #707070;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+}
+
+.plus{
+    width: 16px;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+.mobile_menu_new_con{
+    transform: translate3d(-300px, 0, 0);
+}
+
+.main_screen{
+    overflow-x: hidden;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+

@@ -12,7 +12,7 @@ get_header();
             <div class="main-under text-center">Let me help you reach yours.</div>
         </div>
         <div class="row">
-            <a href="/beast_mode"><center> <button name="singlebutton" class="btn btn-primary center-block button-bottom">Read more about my Beast Mode program</button></center></a>
+            <a href="/beast_mode"><center> <button name="singlebutton" class="btn btn-primary center-block button-bottom">Join my Beast Mode Program</button></center></a>
         </div>
     </header>
     <section class="content">

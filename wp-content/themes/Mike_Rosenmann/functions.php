@@ -141,3 +141,11 @@ add_action("admin_init", "display_theme_panel_fields");
 function get_theme_path(){
     return get_template_directory_uri();
 }
+
+
+
+function hr_line(){
+    return '<hr class = "hr_line">';
+}
+
+add_shortcode( 'hr_line' , hr_line);
